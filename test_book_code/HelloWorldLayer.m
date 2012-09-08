@@ -37,7 +37,7 @@
 		
 		// create and initialize a Label
 		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
-        CCLabelTTF *child_label = [CCLabelTTF labelWithString:@"Hello U!" fontName:@"Marker Felt" fontSize:64];
+        CCLabelTTF *child_label = [CCLabelTTF labelWithString:@"Hello Earth!" fontName:@"Marker Felt" fontSize:64];
 		// ask director the the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
 	
@@ -46,11 +46,17 @@
         
 		// add the label as a child to this Layer
 		[self addChild: label];
-        [label addChild: child_label];
+   //     [label addChild: child_label];
         
         label.tag = 13;
-        child_label.tag = 14;
+
         self.isTouchEnabled = YES;
+        
+        // adding the sprite to the layer
+        CCSprite* sprite = [CCSprite spriteWithFile:@"Default.png"];
+        sprite.position = ccp(size.width/2, size.height/2);
+        sprite.rotation = -90;
+//        [self addChild:sprite];
     }
     
 	return self;
