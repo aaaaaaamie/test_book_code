@@ -46,10 +46,13 @@
         
 		// add the label as a child to this Layer
 		[self addChild: label];
-        [label addChild: child_label];
+   //     [label addChild: child_label];
         
         label.tag = 13;
+<<<<<<< HEAD
         child_label = 15;
+=======
+>>>>>>> 491662b41b00779bba5cd3349e533f1036768b4b
 
         self.isTouchEnabled = YES;
         

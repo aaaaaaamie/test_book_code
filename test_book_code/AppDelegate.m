@@ -111,7 +111,11 @@
 	
 	// Run the intro Scene
 	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
+<<<<<<< HEAD
 //    CCScene* newScene = [HelloWorldLayer scene];
+=======
+    CCScene* newScene = [HelloWorldLayer scene];
+>>>>>>> 491662b41b00779bba5cd3349e533f1036768b4b
     
     // This blocks the touch input!
 //    CCTransitionScene* transition = [CCTransitionShrinkGrow transitionWithDuration:2 scene:newScene];
