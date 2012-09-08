@@ -25,7 +25,7 @@
 
 
 #import <Availability.h>
-
+#define CC_ENABLE_DEPRECATED 1  
 /**
  @file
  cocos2d (cc) configuration file

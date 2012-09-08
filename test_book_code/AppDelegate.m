@@ -111,6 +111,9 @@
 	
 	// Run the intro Scene
 	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
+    CCScene* newScene = [HelloWorldLayer scene];
+    CCSceneTransition* transition = [CCTransitionShrinkGrow transitionWithDuration:2 scene:newScene];
+    [[CCDirector sharedDirector] replaceScene:transition];
 }
 
 
